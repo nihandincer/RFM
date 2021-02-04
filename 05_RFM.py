@@ -2,28 +2,6 @@
 # Customer Segmentation with RFM
 ###############################################################
 
-# Customer Segmentation with RFM in 6 Steps
-
-# 1. Business Problem
-# 2. Data Understanding
-# 3. Data Preparation
-# 4. Calculating RFM Metrics
-# 5. Calculating RFM Scores
-# 6. Naming & Analysing RFM Segments
-
-
-# Bir e-ticaret şirketi müşterilerini segmentlere ayırıp bu segmentlere göre
-# pazarlama stratejileri belirlemek istiyor.
-
-# Buna yönelik olarak müşterilerin davranışlarını tanımlayacağız ve
-# bu davranışlarda öbeklenmelere göre gruplar oluşturacağız.
-
-# Veri Seti Hikayesi
-#
-# https://archive.ics.uci.edu/ml/datasets/Online+Retail+II
-#
-# Online Retail II isimli veri seti İngiltere merkezli online bir satış mağazasının
-# 01/12/2009 - 09/12/2011 tarihleri arasındaki satışlarını içeriyor.
 
 # Değişkenler
 # InvoiceNo: Fatura numarası. Her işleme yani faturaya ait eşsiz numara.
@@ -179,33 +157,3 @@ new_df["Need_Attention"] = rfm[rfm["Segment"] == "Need_Attention"].index
 new_df.to_csv("Need_Attention.csv")
 
 
-############################################
-# PROJE: RFM ile Müşteri Segmentasyonu
-############################################
-# Bir e-ticaret şirketi müşterilerini segmentlere ayırıp bu segmentlere göre pazarlama stratejileri belirlemek istiyor.
-# online_retail_II.xlsx veri setinin "Year 2010-2011" isimli sheet'ine RFM analizi uygulayınız.
-
-# Veri seti nerede? Aşağıdaki adreste yer alan "online_retail_II.xlsx" dosyasını indiriniz.
-# https://www.kaggle.com/nathaniel/uci-online-retail-ii-data-set veya
-# https://archive.ics.uci.edu/ml/machine-learning-databases/00502/
-
-#############################################
-# GÖREV 1: Derste ele alınan uygulamaların benzerlerini yapınız.
-############################################
-
-############################################
-# GÖREV 2: Müşterileri segmentlere ayırdıktan sonra 3 segment seçerek bu 3 segmenti hem aksiyon
-# kararları açısından hem de segmentlerin yapısı açısından (ortalama RFM değerleri açısından)
-# yorumlayınız.
-############################################
-
-############################################
-# GÖREV 3: "Loyal Customers" sınıfına ait customer ID'leri seçerek excel çıktısını alınız.
-############################################
-
-# RFM
-# Recency afferim 5 puan gerçekten mantıklı bir 5 puan mı.
-# sadakat programı : Need_Attention, At_Risk
-
-# CLTV calculate
-# CLTV prediction
